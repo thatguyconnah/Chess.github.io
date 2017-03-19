@@ -1,1 +1,0 @@
-# MiniGamez-Chess
