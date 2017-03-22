@@ -75,6 +75,11 @@ window.onload = function () {
 
     });
 
+   
+        
+        $('#exit').on('click', window.history.back());
+    
+    
 
     var chess = {
         draggable: true,        //makes the pieces draggable
@@ -87,7 +92,9 @@ window.onload = function () {
     board = ChessBoard('gameBoard', chess);     //sets up the chessboard & updates
 
     $('#flipOrientationBtn').on('click', board.flip);       //Flips the board so player 2 can play
-
+    
+    $('#exit').on('click', window.history.back());          //Exits the game
+    
     updateStatus();     //go to update function
 
 };
