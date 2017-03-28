@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+
+    <title>Chess</title>
+
+    <link rel="stylesheet" href="../css/chessboard-0.3.0.min.css">
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <script src="../js/socket.io-1.2.0.js"></script>
+    <script src="../js/chess.min.js"></script>
+    <script src="../js/chessboard-0.3.0.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+
+    <script src="../index.js"></script>
+</head>
+
+<body>
+
+<div data-role="page" id="home">
+
+    <div data-role="content">
+        <div id="container">
+            <div class="bubble">
+                <div class="rectangle"><h2>Chess</h2></div>
+                <div class="info">
+
+                    <p>Chess! Send your friend the link to this page and play along with them!</p>
+                    <p>Decide who's playing what piece and click the button.</p>
+                    <p>DON'T hit the refresh button! You'll lose your progress!</p>
+
+                    <br>
+                    <br>
+
+                    <div id='gameBoard'></div>
+                    <p>Status: <span id="status"></span></p>
+
+                    <br>
+                    <br>
+
+                    <input type="button" id="flipOrientationBtn" value="Flip orientation" class="button"/><br />
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>
